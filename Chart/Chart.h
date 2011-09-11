@@ -29,7 +29,7 @@ class Chart {
         double _scaleMax;
         double _verticalRatio;
         double _offset;
-        boolean _autoRange;
+        boolean _autoScale;
 
         void drawFullGraphLine();
         void drawFullGraphBar();
@@ -37,6 +37,7 @@ class Chart {
 
         int valueToPixel(double value);
 
+        void autoScale();
         void debug(String msg);
 
     public:

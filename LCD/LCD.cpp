@@ -1,5 +1,6 @@
 /** Arduino library for LCD screen Matrix Orbital GLK24064-25
  *
+ * @license Apache License Version 2.0
  * @author Nicolas Herment
  * nherment@gmail.com
  */
