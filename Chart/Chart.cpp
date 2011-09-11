@@ -71,6 +71,8 @@ void Chart::autoScale() {
 
 		if(_scaleMin < 0) {
 			_offset = -_scaleMin;
+		} else {
+		    _offset = 0;
 		}
 	}
 }
