@@ -1,0 +1,273 @@
+\hypertarget{class_l_c_d}{
+\section{\-L\-C\-D \-Class \-Reference}
+\label{class_l_c_d}\index{\-L\-C\-D@{\-L\-C\-D}}
+}
+
+
+{\ttfamily \#include $<$\-L\-C\-D.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_l_c_d_afb6cbb0ecf8aaad46c060e319af0e724}{\-L\-C\-D} (int i2c\-Address)
+\item 
+void \hyperlink{class_l_c_d_adf4626c4c493995042cc63148c8805b6}{set\-Backlight} (boolean on, int minutes\-On)
+\item 
+void \hyperlink{class_l_c_d_a2c0734d6f1830ae19ef4dd05b9d22014}{set\-Brightness} (int brightness)
+\item 
+void \hyperlink{class_l_c_d_a0bd558c0fd92a46c1929beba3972cd61}{clear\-Screen} ()
+\item 
+void \hyperlink{class_l_c_d_af73249176c0673f6da9a9278dbb5fbe9}{draw\-Pixel} (int x, int y)
+\item 
+void \hyperlink{class_l_c_d_ab22ec13ce4607f3c95d7df959f35f97b}{draw\-Rect} (int color, int x1, int y1, int x2, int y2)
+\item 
+void \hyperlink{class_l_c_d_a2d3e22346053cf96a7f4d6860f6e84b4}{fill\-Rect} (int color, int x1, int y1, int x2, int y2)
+\item 
+void \hyperlink{class_l_c_d_a144e747bf6dae0ddd1bdb8a6f64919c0}{draw\-Line} (int x1, int y1, int x2, int y2)
+\item 
+void \hyperlink{class_l_c_d_a48677cbc0e939ba96fa88a43a74e2089}{continue\-Line} (int x, int y)
+\item 
+void \hyperlink{class_l_c_d_a427c727a5fd5b0964099055924f03568}{draw\-Text} (int x, int y, \-String text)
+\item 
+void \hyperlink{class_l_c_d_a63588a54f85cd2ec0ca6f385a7a4db75}{reset\-Cursor} ()
+\item 
+void \hyperlink{class_l_c_d_a16e8115213cdca534e683fb5f45df984}{set\-Cursor} (int x, int y)
+\item 
+void \hyperlink{class_l_c_d_aa9655bbc96a0b1e15546071dadcaa3cc}{select\-Font} (int font\-Id)
+\item 
+void \hyperlink{class_l_c_d_afa84a7882c83a7c11f8abf93d00e28a5}{set\-Color} (int color)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Arduino library for \hyperlink{class_l_c_d}{\-L\-C\-D} screen \-Matrix \-Orbital \-G\-L\-K24064-\/25
+
+\-Copyright 2011 \-Nicolas \-Herment
+
+\-Licensed under the \-Apache \-License, \-Version 2.\-0 (the \char`\"{}\-License\char`\"{}); you may not use this file except in compliance with the \-License. \-You may obtain a copy of the \-License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http\-://www.\-apache.\-org/licenses/\-L\-I\-C\-E\-N\-S\-E-\/2.\-0}
+
+\-Unless required by applicable law or agreed to in writing, software distributed under the \-License is distributed on an \char`\"{}\-A\-S I\-S\char`\"{} \-B\-A\-S\-I\-S, \-W\-I\-T\-H\-O\-U\-T \-W\-A\-R\-R\-A\-N\-T\-I\-E\-S \-O\-R \-C\-O\-N\-D\-I\-T\-I\-O\-N\-S \-O\-F \-A\-N\-Y \-K\-I\-N\-D, either express or implied. \-See the \-License for the specific language governing permissions and limitations under the \-License. 
+
+\-Definition at line 22 of file \-L\-C\-D.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_l_c_d_afb6cbb0ecf8aaad46c060e319af0e724}{
+\index{\-L\-C\-D@{\-L\-C\-D}!\-L\-C\-D@{\-L\-C\-D}}
+\index{\-L\-C\-D@{\-L\-C\-D}!LCD@{\-L\-C\-D}}
+\subsubsection[{\-L\-C\-D}]{\setlength{\rightskip}{0pt plus 5cm}\-L\-C\-D\-::\-L\-C\-D (
+\begin{DoxyParamCaption}
+\item[{int}]{i2c\-Address}
+\end{DoxyParamCaption}
+)}}
+\label{class_l_c_d_afb6cbb0ecf8aaad46c060e319af0e724}
+\-Arduino library for \hyperlink{class_l_c_d}{\-L\-C\-D} screen \-Matrix \-Orbital \-G\-L\-K24064-\/25
+
+\-Copyright 2011 \-Nicolas \-Herment
+
+\-Licensed under the \-Apache \-License, \-Version 2.\-0 (the \char`\"{}\-License\char`\"{}); you may not use this file except in compliance with the \-License. \-You may obtain a copy of the \-License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http\-://www.\-apache.\-org/licenses/\-L\-I\-C\-E\-N\-S\-E-\/2.\-0}
+
+\-Unless required by applicable law or agreed to in writing, software distributed under the \-License is distributed on an \char`\"{}\-A\-S I\-S\char`\"{} \-B\-A\-S\-I\-S, \-W\-I\-T\-H\-O\-U\-T \-W\-A\-R\-R\-A\-N\-T\-I\-E\-S \-O\-R \-C\-O\-N\-D\-I\-T\-I\-O\-N\-S \-O\-F \-A\-N\-Y \-K\-I\-N\-D, either express or implied. \-See the \-License for the specific language governing permissions and limitations under the \-License. 
+
+\-Definition at line 22 of file \-L\-C\-D.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_l_c_d_a0bd558c0fd92a46c1929beba3972cd61}{
+\index{\-L\-C\-D@{\-L\-C\-D}!clear\-Screen@{clear\-Screen}}
+\index{clear\-Screen@{clear\-Screen}!LCD@{\-L\-C\-D}}
+\subsubsection[{clear\-Screen}]{\setlength{\rightskip}{0pt plus 5cm}void \-L\-C\-D\-::clear\-Screen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_l_c_d_a0bd558c0fd92a46c1929beba3972cd61}
+
+
+\-Definition at line 46 of file \-L\-C\-D.\-cpp.
+
+\hypertarget{class_l_c_d_a48677cbc0e939ba96fa88a43a74e2089}{
+\index{\-L\-C\-D@{\-L\-C\-D}!continue\-Line@{continue\-Line}}
+\index{continue\-Line@{continue\-Line}!LCD@{\-L\-C\-D}}
+\subsubsection[{continue\-Line}]{\setlength{\rightskip}{0pt plus 5cm}void \-L\-C\-D\-::continue\-Line (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}
+\label{class_l_c_d_a48677cbc0e939ba96fa88a43a74e2089}
+
+
+\-Definition at line 97 of file \-L\-C\-D.\-cpp.
+
+\hypertarget{class_l_c_d_a144e747bf6dae0ddd1bdb8a6f64919c0}{
+\index{\-L\-C\-D@{\-L\-C\-D}!draw\-Line@{draw\-Line}}
+\index{draw\-Line@{draw\-Line}!LCD@{\-L\-C\-D}}
+\subsubsection[{draw\-Line}]{\setlength{\rightskip}{0pt plus 5cm}void \-L\-C\-D\-::draw\-Line (
+\begin{DoxyParamCaption}
+\item[{int}]{x1, }
+\item[{int}]{y1, }
+\item[{int}]{x2, }
+\item[{int}]{y2}
+\end{DoxyParamCaption}
+)}}
+\label{class_l_c_d_a144e747bf6dae0ddd1bdb8a6f64919c0}
+
+
+\-Definition at line 86 of file \-L\-C\-D.\-cpp.
+
+\hypertarget{class_l_c_d_af73249176c0673f6da9a9278dbb5fbe9}{
+\index{\-L\-C\-D@{\-L\-C\-D}!draw\-Pixel@{draw\-Pixel}}
+\index{draw\-Pixel@{draw\-Pixel}!LCD@{\-L\-C\-D}}
+\subsubsection[{draw\-Pixel}]{\setlength{\rightskip}{0pt plus 5cm}void \-L\-C\-D\-::draw\-Pixel (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}
+\label{class_l_c_d_af73249176c0673f6da9a9278dbb5fbe9}
+
+
+\-Definition at line 53 of file \-L\-C\-D.\-cpp.
+
+\hypertarget{class_l_c_d_ab22ec13ce4607f3c95d7df959f35f97b}{
+\index{\-L\-C\-D@{\-L\-C\-D}!draw\-Rect@{draw\-Rect}}
+\index{draw\-Rect@{draw\-Rect}!LCD@{\-L\-C\-D}}
+\subsubsection[{draw\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}void \-L\-C\-D\-::draw\-Rect (
+\begin{DoxyParamCaption}
+\item[{int}]{color, }
+\item[{int}]{x1, }
+\item[{int}]{y1, }
+\item[{int}]{x2, }
+\item[{int}]{y2}
+\end{DoxyParamCaption}
+)}}
+\label{class_l_c_d_ab22ec13ce4607f3c95d7df959f35f97b}
+
+
+\-Definition at line 62 of file \-L\-C\-D.\-cpp.
+
+\hypertarget{class_l_c_d_a427c727a5fd5b0964099055924f03568}{
+\index{\-L\-C\-D@{\-L\-C\-D}!draw\-Text@{draw\-Text}}
+\index{draw\-Text@{draw\-Text}!LCD@{\-L\-C\-D}}
+\subsubsection[{draw\-Text}]{\setlength{\rightskip}{0pt plus 5cm}void \-L\-C\-D\-::draw\-Text (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{\-String}]{text}
+\end{DoxyParamCaption}
+)}}
+\label{class_l_c_d_a427c727a5fd5b0964099055924f03568}
+
+
+\-Definition at line 106 of file \-L\-C\-D.\-cpp.
+
+\hypertarget{class_l_c_d_a2d3e22346053cf96a7f4d6860f6e84b4}{
+\index{\-L\-C\-D@{\-L\-C\-D}!fill\-Rect@{fill\-Rect}}
+\index{fill\-Rect@{fill\-Rect}!LCD@{\-L\-C\-D}}
+\subsubsection[{fill\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}void \-L\-C\-D\-::fill\-Rect (
+\begin{DoxyParamCaption}
+\item[{int}]{color, }
+\item[{int}]{x1, }
+\item[{int}]{y1, }
+\item[{int}]{x2, }
+\item[{int}]{y2}
+\end{DoxyParamCaption}
+)}}
+\label{class_l_c_d_a2d3e22346053cf96a7f4d6860f6e84b4}
+
+
+\-Definition at line 74 of file \-L\-C\-D.\-cpp.
+
+\hypertarget{class_l_c_d_a63588a54f85cd2ec0ca6f385a7a4db75}{
+\index{\-L\-C\-D@{\-L\-C\-D}!reset\-Cursor@{reset\-Cursor}}
+\index{reset\-Cursor@{reset\-Cursor}!LCD@{\-L\-C\-D}}
+\subsubsection[{reset\-Cursor}]{\setlength{\rightskip}{0pt plus 5cm}void \-L\-C\-D\-::reset\-Cursor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_l_c_d_a63588a54f85cd2ec0ca6f385a7a4db75}
+
+
+\-Definition at line 118 of file \-L\-C\-D.\-cpp.
+
+\hypertarget{class_l_c_d_aa9655bbc96a0b1e15546071dadcaa3cc}{
+\index{\-L\-C\-D@{\-L\-C\-D}!select\-Font@{select\-Font}}
+\index{select\-Font@{select\-Font}!LCD@{\-L\-C\-D}}
+\subsubsection[{select\-Font}]{\setlength{\rightskip}{0pt plus 5cm}void \-L\-C\-D\-::select\-Font (
+\begin{DoxyParamCaption}
+\item[{int}]{font\-Id}
+\end{DoxyParamCaption}
+)}}
+\label{class_l_c_d_aa9655bbc96a0b1e15546071dadcaa3cc}
+
+
+\-Definition at line 134 of file \-L\-C\-D.\-cpp.
+
+\hypertarget{class_l_c_d_adf4626c4c493995042cc63148c8805b6}{
+\index{\-L\-C\-D@{\-L\-C\-D}!set\-Backlight@{set\-Backlight}}
+\index{set\-Backlight@{set\-Backlight}!LCD@{\-L\-C\-D}}
+\subsubsection[{set\-Backlight}]{\setlength{\rightskip}{0pt plus 5cm}void \-L\-C\-D\-::set\-Backlight (
+\begin{DoxyParamCaption}
+\item[{boolean}]{on, }
+\item[{int}]{minutes\-On}
+\end{DoxyParamCaption}
+)}}
+\label{class_l_c_d_adf4626c4c493995042cc63148c8805b6}
+
+
+\-Definition at line 26 of file \-L\-C\-D.\-cpp.
+
+\hypertarget{class_l_c_d_a2c0734d6f1830ae19ef4dd05b9d22014}{
+\index{\-L\-C\-D@{\-L\-C\-D}!set\-Brightness@{set\-Brightness}}
+\index{set\-Brightness@{set\-Brightness}!LCD@{\-L\-C\-D}}
+\subsubsection[{set\-Brightness}]{\setlength{\rightskip}{0pt plus 5cm}void \-L\-C\-D\-::set\-Brightness (
+\begin{DoxyParamCaption}
+\item[{int}]{brightness}
+\end{DoxyParamCaption}
+)}}
+\label{class_l_c_d_a2c0734d6f1830ae19ef4dd05b9d22014}
+
+
+\-Definition at line 38 of file \-L\-C\-D.\-cpp.
+
+\hypertarget{class_l_c_d_afa84a7882c83a7c11f8abf93d00e28a5}{
+\index{\-L\-C\-D@{\-L\-C\-D}!set\-Color@{set\-Color}}
+\index{set\-Color@{set\-Color}!LCD@{\-L\-C\-D}}
+\subsubsection[{set\-Color}]{\setlength{\rightskip}{0pt plus 5cm}void \-L\-C\-D\-::set\-Color (
+\begin{DoxyParamCaption}
+\item[{int}]{color}
+\end{DoxyParamCaption}
+)}}
+\label{class_l_c_d_afa84a7882c83a7c11f8abf93d00e28a5}
+
+
+\-Definition at line 158 of file \-L\-C\-D.\-cpp.
+
+\hypertarget{class_l_c_d_a16e8115213cdca534e683fb5f45df984}{
+\index{\-L\-C\-D@{\-L\-C\-D}!set\-Cursor@{set\-Cursor}}
+\index{set\-Cursor@{set\-Cursor}!LCD@{\-L\-C\-D}}
+\subsubsection[{set\-Cursor}]{\setlength{\rightskip}{0pt plus 5cm}void \-L\-C\-D\-::set\-Cursor (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}
+\label{class_l_c_d_a16e8115213cdca534e683fb5f45df984}
+
+
+\-Definition at line 125 of file \-L\-C\-D.\-cpp.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-L\-C\-D/\hyperlink{_l_c_d_8h}{\-L\-C\-D.\-h}\item 
+\-L\-C\-D/\hyperlink{_l_c_d_8cpp}{\-L\-C\-D.\-cpp}\end{DoxyCompactItemize}

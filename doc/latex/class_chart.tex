@@ -1,0 +1,250 @@
+\hypertarget{class_chart}{
+\section{\-Chart \-Class \-Reference}
+\label{class_chart}\index{\-Chart@{\-Chart}}
+}
+
+
+{\ttfamily \#include $<$\-Chart.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_chart_a00e865108eeff7fd752f6e7e372be4fe}{\-Chart} (\hyperlink{class_l_c_d}{\-L\-C\-D} $\ast$lcd, int x1, int y1, int x2, int y2)
+\item 
+void \hyperlink{class_chart_a0d85198e40c99d19de7c1c9e7c6f243d}{set\-Values} (double $\ast$values)
+\item 
+void \hyperlink{class_chart_a3fee3d36534d20b3abe07b025d619933}{set\-Num\-Values} (int num\-Values)
+\item 
+void \hyperlink{class_chart_ab3533eaa5137950413298286f3d5da94}{full\-Update} ()
+\item 
+void \hyperlink{class_chart_a48526bf76895b77b03612c60c791757c}{set\-Color} (int color)
+\item 
+void \hyperlink{class_chart_aee6075ee66b5e5e462856b596f14985c}{set\-Style} (int style)
+\item 
+void \hyperlink{class_chart_a8a74426fd855dae79e45c6cde6de7cf0}{set\-Vertical\-Scale} (double min, double max)
+\item 
+void \hyperlink{class_chart_a2e15bf68d3e96c90fd4fdc36702936f8}{set\-Offset} (double offset)
+\item 
+void \hyperlink{class_chart_aaec22426bc8c4c86e852c599923d1a1e}{activate\-Auto\-Scale} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{class_chart_a96b590d4da6b9cecb76fef8c45a471d8}{\-S\-T\-Y\-L\-E\-\_\-\-B\-A\-R} = 0
+\item 
+static const int \hyperlink{class_chart_a188d5bd4cd6898300be57056f79f55ba}{\-S\-T\-Y\-L\-E\-\_\-\-L\-I\-N\-E} = 1
+\item 
+static const int \hyperlink{class_chart_accf3581e81db2e9841c311306963b0e3}{\-S\-T\-Y\-L\-E\-\_\-\-B\-A\-R\-\_\-\-R\-E\-L} = 2
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Arduino library for drawing \-Histogram on a \hyperlink{class_l_c_d}{\-L\-C\-D} \-Represents a chart to display in a \hyperlink{class_l_c_d}{\-L\-C\-D} screen
+
+\-Copyright 2011 \-Nicolas \-Herment
+
+\-Licensed under the \-Apache \-License, \-Version 2.\-0 (the \char`\"{}\-License\char`\"{}); you may not use this file except in compliance with the \-License. \-You may obtain a copy of the \-License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http\-://www.\-apache.\-org/licenses/\-L\-I\-C\-E\-N\-S\-E-\/2.\-0}
+
+\-Unless required by applicable law or agreed to in writing, software distributed under the \-License is distributed on an \char`\"{}\-A\-S I\-S\char`\"{} \-B\-A\-S\-I\-S, \-W\-I\-T\-H\-O\-U\-T \-W\-A\-R\-R\-A\-N\-T\-I\-E\-S \-O\-R \-C\-O\-N\-D\-I\-T\-I\-O\-N\-S \-O\-F \-A\-N\-Y \-K\-I\-N\-D, either express or implied. \-See the \-License for the specific language governing permissions and limitations under the \-License. 
+
+\-Definition at line 24 of file \-Chart.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_chart_a00e865108eeff7fd752f6e7e372be4fe}{
+\index{\-Chart@{\-Chart}!\-Chart@{\-Chart}}
+\index{\-Chart@{\-Chart}!Chart@{\-Chart}}
+\subsubsection[{\-Chart}]{\setlength{\rightskip}{0pt plus 5cm}\-Chart\-::\-Chart (
+\begin{DoxyParamCaption}
+\item[{{\bf \-L\-C\-D} $\ast$}]{lcd, }
+\item[{int}]{x1, }
+\item[{int}]{y1, }
+\item[{int}]{x2, }
+\item[{int}]{y2}
+\end{DoxyParamCaption}
+)}}
+\label{class_chart_a00e865108eeff7fd752f6e7e372be4fe}
+\-Arduino library for displaying \-Charts on a \hyperlink{class_l_c_d}{\-L\-C\-D}
+
+\-Copyright 2011 \-Nicolas \-Herment
+
+\-Licensed under the \-Apache \-License, \-Version 2.\-0 (the \char`\"{}\-License\char`\"{}); you may not use this file except in compliance with the \-License. \-You may obtain a copy of the \-License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http\-://www.\-apache.\-org/licenses/\-L\-I\-C\-E\-N\-S\-E-\/2.\-0}
+
+\-Unless required by applicable law or agreed to in writing, software distributed under the \-License is distributed on an \char`\"{}\-A\-S I\-S\char`\"{} \-B\-A\-S\-I\-S, \-W\-I\-T\-H\-O\-U\-T \-W\-A\-R\-R\-A\-N\-T\-I\-E\-S \-O\-R \-C\-O\-N\-D\-I\-T\-I\-O\-N\-S \-O\-F \-A\-N\-Y \-K\-I\-N\-D, either express or implied. \-See the \-License for the specific language governing permissions and limitations under the \-License.
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em lcd} & \-A reference to the \hyperlink{class_l_c_d}{\-L\-C\-D} which displays the graph \\
+\hline
+{\em x1} & \-West boundary in pixels \\
+\hline
+{\em y1} & \-North bounday in pixels \\
+\hline
+{\em x2} & \-East boundary in pixels \\
+\hline
+{\em y2} & \-South boundary in pixels \\
+\hline
+\end{DoxyParams}
+
+
+\-Definition at line 30 of file \-Chart.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_chart_aaec22426bc8c4c86e852c599923d1a1e}{
+\index{\-Chart@{\-Chart}!activate\-Auto\-Scale@{activate\-Auto\-Scale}}
+\index{activate\-Auto\-Scale@{activate\-Auto\-Scale}!Chart@{\-Chart}}
+\subsubsection[{activate\-Auto\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}void \-Chart\-::activate\-Auto\-Scale (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_chart_aaec22426bc8c4c86e852c599923d1a1e}
+\-Activate the automatic scale for displaying the values. \-Auto\-Scale is activated by default and is disactivated when \hyperlink{class_chart_a8a74426fd855dae79e45c6cde6de7cf0}{set\-Vertical\-Scale()} is called. \-Use this method to re-\/activate the auto\-Scale afetr you've used \hyperlink{class_chart_a8a74426fd855dae79e45c6cde6de7cf0}{set\-Vertical\-Scale()}. 
+
+\-Definition at line 58 of file \-Chart.\-cpp.
+
+\hypertarget{class_chart_ab3533eaa5137950413298286f3d5da94}{
+\index{\-Chart@{\-Chart}!full\-Update@{full\-Update}}
+\index{full\-Update@{full\-Update}!Chart@{\-Chart}}
+\subsubsection[{full\-Update}]{\setlength{\rightskip}{0pt plus 5cm}void \-Chart\-::full\-Update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_chart_ab3533eaa5137950413298286f3d5da94}
+this method redraw the whole graph. \-It should be called whenever a value or a parameter has changed. 
+
+\-Definition at line 99 of file \-Chart.\-cpp.
+
+\hypertarget{class_chart_a48526bf76895b77b03612c60c791757c}{
+\index{\-Chart@{\-Chart}!set\-Color@{set\-Color}}
+\index{set\-Color@{set\-Color}!Chart@{\-Chart}}
+\subsubsection[{set\-Color}]{\setlength{\rightskip}{0pt plus 5cm}void \-Chart\-::set\-Color (
+\begin{DoxyParamCaption}
+\item[{int}]{color}
+\end{DoxyParamCaption}
+)}}
+\label{class_chart_a48526bf76895b77b03612c60c791757c}
+set the color of the graph. 
+\begin{DoxyParams}{\-Parameters}
+{\em color} & between 0 and 255. \\
+\hline
+\end{DoxyParams}
+
+
+\-Definition at line 82 of file \-Chart.\-cpp.
+
+\hypertarget{class_chart_a3fee3d36534d20b3abe07b025d619933}{
+\index{\-Chart@{\-Chart}!set\-Num\-Values@{set\-Num\-Values}}
+\index{set\-Num\-Values@{set\-Num\-Values}!Chart@{\-Chart}}
+\subsubsection[{set\-Num\-Values}]{\setlength{\rightskip}{0pt plus 5cm}void \-Chart\-::set\-Num\-Values (
+\begin{DoxyParamCaption}
+\item[{int}]{num\-Values}
+\end{DoxyParamCaption}
+)}}
+\label{class_chart_a3fee3d36534d20b3abe07b025d619933}
+\-Declare the number of values to process 
+
+\-Definition at line 94 of file \-Chart.\-cpp.
+
+\hypertarget{class_chart_a2e15bf68d3e96c90fd4fdc36702936f8}{
+\index{\-Chart@{\-Chart}!set\-Offset@{set\-Offset}}
+\index{set\-Offset@{set\-Offset}!Chart@{\-Chart}}
+\subsubsection[{set\-Offset}]{\setlength{\rightskip}{0pt plus 5cm}void \-Chart\-::set\-Offset (
+\begin{DoxyParamCaption}
+\item[{double}]{offset}
+\end{DoxyParamCaption}
+)}}
+\label{class_chart_a2e15bf68d3e96c90fd4fdc36702936f8}
+true base offset 
+
+\-Definition at line 90 of file \-Chart.\-cpp.
+
+\hypertarget{class_chart_aee6075ee66b5e5e462856b596f14985c}{
+\index{\-Chart@{\-Chart}!set\-Style@{set\-Style}}
+\index{set\-Style@{set\-Style}!Chart@{\-Chart}}
+\subsubsection[{set\-Style}]{\setlength{\rightskip}{0pt plus 5cm}void \-Chart\-::set\-Style (
+\begin{DoxyParamCaption}
+\item[{int}]{style}
+\end{DoxyParamCaption}
+)}}
+\label{class_chart_aee6075ee66b5e5e462856b596f14985c}
+\-Style of the graph. 
+\begin{DoxyParams}{\-Parameters}
+{\em style} & one of \-G\-R\-P\-H\-\_\-\-S\-T\-Y\-L\-E\-\_\-$\ast$ constants. \\
+\hline
+\end{DoxyParams}
+
+
+\-Definition at line 86 of file \-Chart.\-cpp.
+
+\hypertarget{class_chart_a0d85198e40c99d19de7c1c9e7c6f243d}{
+\index{\-Chart@{\-Chart}!set\-Values@{set\-Values}}
+\index{set\-Values@{set\-Values}!Chart@{\-Chart}}
+\subsubsection[{set\-Values}]{\setlength{\rightskip}{0pt plus 5cm}void \-Chart\-::set\-Values (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{values}
+\end{DoxyParamCaption}
+)}}
+\label{class_chart_a0d85198e40c99d19de7c1c9e7c6f243d}
+\-The actual values of the chart. \-Values should be in the range defined by \hyperlink{class_chart_a8a74426fd855dae79e45c6cde6de7cf0}{set\-Vertical\-Scale()} or \hyperlink{class_chart_aaec22426bc8c4c86e852c599923d1a1e}{activate\-Auto\-Scale()} should be used. 
+
+\-Definition at line 78 of file \-Chart.\-cpp.
+
+\hypertarget{class_chart_a8a74426fd855dae79e45c6cde6de7cf0}{
+\index{\-Chart@{\-Chart}!set\-Vertical\-Scale@{set\-Vertical\-Scale}}
+\index{set\-Vertical\-Scale@{set\-Vertical\-Scale}!Chart@{\-Chart}}
+\subsubsection[{set\-Vertical\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}void \-Chart\-::set\-Vertical\-Scale (
+\begin{DoxyParamCaption}
+\item[{double}]{min, }
+\item[{double}]{max}
+\end{DoxyParamCaption}
+)}}
+\label{class_chart_a8a74426fd855dae79e45c6cde6de7cf0}
+set the vertical scale of the values. 
+
+\-Definition at line 47 of file \-Chart.\-cpp.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_chart_a96b590d4da6b9cecb76fef8c45a471d8}{
+\index{\-Chart@{\-Chart}!\-S\-T\-Y\-L\-E\-\_\-\-B\-A\-R@{\-S\-T\-Y\-L\-E\-\_\-\-B\-A\-R}}
+\index{\-S\-T\-Y\-L\-E\-\_\-\-B\-A\-R@{\-S\-T\-Y\-L\-E\-\_\-\-B\-A\-R}!Chart@{\-Chart}}
+\subsubsection[{\-S\-T\-Y\-L\-E\-\_\-\-B\-A\-R}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf \-Chart\-::\-S\-T\-Y\-L\-E\-\_\-\-B\-A\-R} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_chart_a96b590d4da6b9cecb76fef8c45a471d8}
+\-Bar-\/style chart where bars always start from the bottom of the chart 
+
+\-Definition at line 69 of file \-Chart.\-h.
+
+\hypertarget{class_chart_accf3581e81db2e9841c311306963b0e3}{
+\index{\-Chart@{\-Chart}!\-S\-T\-Y\-L\-E\-\_\-\-B\-A\-R\-\_\-\-R\-E\-L@{\-S\-T\-Y\-L\-E\-\_\-\-B\-A\-R\-\_\-\-R\-E\-L}}
+\index{\-S\-T\-Y\-L\-E\-\_\-\-B\-A\-R\-\_\-\-R\-E\-L@{\-S\-T\-Y\-L\-E\-\_\-\-B\-A\-R\-\_\-\-R\-E\-L}!Chart@{\-Chart}}
+\subsubsection[{\-S\-T\-Y\-L\-E\-\_\-\-B\-A\-R\-\_\-\-R\-E\-L}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf \-Chart\-::\-S\-T\-Y\-L\-E\-\_\-\-B\-A\-R\-\_\-\-R\-E\-L} = 2\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_chart_accf3581e81db2e9841c311306963b0e3}
+\-Bar-\/style chart where bars always start from a reference 
+
+\-Definition at line 73 of file \-Chart.\-h.
+
+\hypertarget{class_chart_a188d5bd4cd6898300be57056f79f55ba}{
+\index{\-Chart@{\-Chart}!\-S\-T\-Y\-L\-E\-\_\-\-L\-I\-N\-E@{\-S\-T\-Y\-L\-E\-\_\-\-L\-I\-N\-E}}
+\index{\-S\-T\-Y\-L\-E\-\_\-\-L\-I\-N\-E@{\-S\-T\-Y\-L\-E\-\_\-\-L\-I\-N\-E}!Chart@{\-Chart}}
+\subsubsection[{\-S\-T\-Y\-L\-E\-\_\-\-L\-I\-N\-E}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf \-Chart\-::\-S\-T\-Y\-L\-E\-\_\-\-L\-I\-N\-E} = 1\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_chart_a188d5bd4cd6898300be57056f79f55ba}
+\-Line-\/style chart 
+
+\-Definition at line 71 of file \-Chart.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-Chart/\hyperlink{_chart_8h}{\-Chart.\-h}\item 
+\-Chart/\hyperlink{_chart_8cpp}{\-Chart.\-cpp}\end{DoxyCompactItemize}

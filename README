@@ -1,0 +1,43 @@
+/**
+ * Copyright 2011 Nicolas Herment
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+ FAQ:
+
+ 1) How to install the libraries ?
+ http://arduino.cc/en/Hacking/LibraryTutorial
+
+ 2) Do you have any documentation on how to use the libraries ?
+ Yes.
+
+ Here is a sketchfile which is using the library:
+	http://goellan.fr/public/dev/arduino/I2C/I2C.pde
+
+ Here is Doxygen output on the project:
+	http://goellan.fr/public/dev/arduino/libraries/doc/html/
+
+ Here is Git-hub repository:
+ 	https://github.com/nherment/Arduino-Library
+
+ 3) Where can I get the latest sources ?
+ Here: https://github.com/nherment/Arduino-Library
+
+ 4) Can you help me ?
+ Yes, but this guy can certainly answer your questions:
+ 	http://www.google.com
+
+ You still haven't find answers to your questions ?
+ Then drop me a line: nherment `at` gmail `dot` com
+
